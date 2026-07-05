@@ -1,0 +1,92 @@
+[
+  {
+    "id": "skillary",
+    "name": "Skillary",
+    "kind": "web",
+    "summary": "Каталог онлайн-курсов с фильтрами, тарифами и FAQ.",
+    "repo_url": "https://github.com/brtvd07/skillary",
+    "demo_url": "https://brtvd07.github.io/skillary/",
+    "proof": "Фильтры курсов, два режима тарифов, доступный FAQ и переход в Telegram.",
+    "demo": true
+  },
+  {
+    "id": "glowstudio",
+    "name": "GlowStudio",
+    "kind": "web",
+    "summary": "Сайт сервисного бизнеса с пошаговой онлайн-записью.",
+    "repo_url": "https://github.com/brtvd07/glowstudio",
+    "demo_url": "https://brtvd07.github.io/glowstudio/",
+    "proof": "Выбор услуги, даты и времени с валидацией шагов и готовым запросом в Telegram.",
+    "demo": true
+  },
+  {
+    "id": "nordmarket",
+    "name": "NordMarket",
+    "kind": "web",
+    "summary": "Интерактивный каталог товаров с корзиной и оформлением заказа.",
+    "repo_url": "https://github.com/brtvd07/nordmarket",
+    "demo_url": "https://brtvd07.github.io/nordmarket/",
+    "proof": "Поиск, фильтры, сортировка, localStorage-корзина, промокод и безопасная демо-оплата.",
+    "demo": true
+  },
+  {
+    "id": "stroyraschet",
+    "name": "СтройРасчёт",
+    "kind": "web",
+    "summary": "Сайт услуг с прозрачным калькулятором предварительной сметы.",
+    "repo_url": "https://github.com/brtvd07/stroyraschet",
+    "demo_url": "https://brtvd07.github.io/stroyraschet/",
+    "proof": "Пошаговый расчёт, явные допущения, детализация сметы и передача запроса в Telegram.",
+    "demo": true
+  },
+  {
+    "id": "flowdesk",
+    "name": "FlowDesk",
+    "kind": "web",
+    "summary": "B2B-панель для работы с клиентами, заявками и показателями.",
+    "repo_url": "https://github.com/brtvd07/flowdesk",
+    "demo_url": "https://brtvd07.github.io/flowdesk/",
+    "proof": "Демо-вход, поиск, фильтры, статусы, адаптивные таблицы и графики.",
+    "demo": true
+  },
+  {
+    "id": "telegram-freelance-agent",
+    "name": "Telegram Freelance Agent",
+    "kind": "python",
+    "summary": "Локальный агент для поиска и обработки технических заказов.",
+    "repo_url": "https://github.com/brtvd07/telegram-freelance-agent",
+    "demo_url": "https://github.com/brtvd07/telegram-freelance-agent",
+    "proof": "Фильтрация источников, Telegram-управление, порядок обработки заказа и воспроизводимый запуск.",
+    "demo": false
+  },
+  {
+    "id": "telegram-expense-bot",
+    "name": "Telegram Expense Bot",
+    "kind": "python",
+    "summary": "Telegram-бот для учёта расходов и подготовки отчётов.",
+    "repo_url": "https://github.com/brtvd07/telegram-expense-bot",
+    "demo_url": "https://github.com/brtvd07/telegram-expense-bot",
+    "proof": "Пошаговый диалог, валидация, отчёты, адаптер Google Sheets и локальное демо-хранилище.",
+    "demo": false
+  },
+  {
+    "id": "ai-support-bot",
+    "name": "AI Support Bot",
+    "kind": "python",
+    "summary": "Консультант, который отвечает на основе проверяемой базы знаний.",
+    "repo_url": "https://github.com/brtvd07/ai-support-bot",
+    "demo_url": "https://github.com/brtvd07/ai-support-bot/tree/main/demo",
+    "proof": "Поиск релевантного контекста, grounded-ответы, FastAPI, Telegram-адаптер и офлайн-режим.",
+    "demo": true
+  },
+  {
+    "id": "booking-crm-bot",
+    "name": "Booking CRM Bot",
+    "kind": "python",
+    "summary": "Система записи клиентов с Telegram, API и CRM-интерфейсом.",
+    "repo_url": "https://github.com/brtvd07/booking-crm-bot",
+    "demo_url": "https://github.com/brtvd07/booking-crm-bot/tree/main/demo",
+    "proof": "Услуги и слоты, защита от двойной записи, отмена, уведомления, FastAPI и веб-демо.",
+    "demo": true
+  }
+]
