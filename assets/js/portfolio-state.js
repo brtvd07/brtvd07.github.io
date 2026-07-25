@@ -19,7 +19,10 @@
     if (repo.protocol !== "https:" || repo.hostname !== "github.com" || repo.pathname !== `/brtvd07/${project.id}` || repo.username || repo.password || repo.port || repo.search || repo.hash) throw new Error("invalid repo_url");
     if (!demoPaths.has(project.demo_url)) {
       const demo = new URL(project.demo_url);
-      if (demo.protocol !== "https:" || !["brtvd07.github.io", "github.com"].includes(demo.hostname) || (demo.hostname === "github.com" && !demo.pathname.startsWith("/brtvd07/")) || demo.username || demo.password || demo.port) throw new Error("invalid demo_url");
+      const allowedDemoHost =
+        demo.hostname === "brtvd07.github.io" ||
+        (demo.hostname === "github.com" && demo.pathname.startsWith("/brtvd07/"));
+      if (demo.protocol !== "https:" || !allowedDemoHost || demo.username || demo.password || demo.port) throw new Error("invalid demo_url");
     }
     return project;
   }

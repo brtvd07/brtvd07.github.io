@@ -49,7 +49,20 @@ def audit_portfolio(root: Path) -> list[str]:
             errors.append(f"{prefix}: invalid repo_url")
         demo = project["demo_url"]
         parsed_demo = urlparse(demo)
-        if demo not in STAGING_DEMOS and not (parsed_demo.scheme == "https" and not parsed_demo.username and ((parsed_demo.netloc == "brtvd07.github.io") or (parsed_demo.netloc == "github.com" and parsed_demo.path.startswith("/brtvd07/")))):
+        public_demo = (
+            parsed_demo.scheme == "https"
+            and not parsed_demo.username
+            and not parsed_demo.password
+            and not parsed_demo.port
+            and (
+                parsed_demo.netloc == "brtvd07.github.io"
+                or (
+                    parsed_demo.netloc == "github.com"
+                    and parsed_demo.path.startswith("/brtvd07/")
+                )
+            )
+        )
+        if demo not in STAGING_DEMOS and not public_demo:
             errors.append(f"{prefix}: invalid demo_url")
         if demo in STAGING_DEMOS:
             target = (root / demo).resolve()
